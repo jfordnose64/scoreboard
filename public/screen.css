@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: #293462;
   color: rgb(14, 14, 14);
 }
 
@@ -48,14 +48,80 @@ h1 {
 .team-2-score {
   text-align: center;
   font-size: 5rem;
+  border: 1px solid #f76262;
+  height: 5rem;
+  padding: 1rem;
+  background-color: #f76262;
+  border-radius: 1rem;
+  color: #fff1c1;
 }
 
 .quarter {
   padding: 1rem;
   text-align: center;
   font-size: 1rem;
+  height: 4rem;
 }
 
 .quarter-1-number {
   font-size: 2rem;
+}
+
+.quarter {
+  border: 1px solid #fff1c1;
+  height: 6rem;
+  padding: 1rem;
+  background-color: #fff1c1;
+  border-radius: 1rem;
+  color: #216583;
+}
+
+.scoreboard {
+  border: 1px solid #fff1c1;
+  height: 3rem;
+  padding: 1rem;
+  background-color: #fff1c1;
+  border-radius: 1rem;
+  color: #216583;
+}
+
+.team-1-name,
+.team-2-name {
+  border: 1px solid #fff1c1;
+  height: 3rem;
+  padding: 1rem;
+  background-color: #fff1c1;
+  border-radius: 1rem;
+  color: #216583;
+}
+
+.update-team-1-name,
+.update-team-2-name,
+.team-1-add-1-button,
+.team-2-add-1-button,
+.team-1-subtract-1-button,
+.team-2-subtract-1-button {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff1c1;
+  border: 1px solid #216583;
+  background-color: #216583;
+  border-radius: .5rem;
+}
+
+.team-1-input,
+.team-2-input {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #216583;
+  border: 1px solid #fff1c1;
+  background-color: #fff1c1;
+  border-radius: .5rem;
+}
+
+section {
+  color: #f76262;
+  font-size: 1rem;
+  font-weight: 500;
+
 }

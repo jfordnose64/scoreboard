@@ -1,3 +1,5 @@
+// import { max } from "rxjs/operators";
+
 const team1Input = document.querySelector('.team-1-input')
 let team1Name = document.querySelector('.team-1-name')
 const team2Input = document.querySelector('.team-2-input')
@@ -35,14 +37,11 @@ const addTeam1Score = () => {
       team1Score.textContent = 0
     }
   }
-  // if (quarter.textContent <= 4) {
-  //   quarter.textContent = 0
-  //   if (quarter.textContent = 4 {
-  //     currentTeam1Score =
-  //   }
-  // }
+  if (quarter.textContent >= 4) {
+    quarter.textContent = 0
+  }
 }
-team1Add.addEventListener("click", addTeam1Score)
+team1Add.addEventListener('click', addTeam1Score)
 
 const subTeam1Score = () => {
   let currentTeam1Score = team1Score.textContent
@@ -50,10 +49,9 @@ const subTeam1Score = () => {
   currentTeam1Score--
 
   team1Score.textContent = currentTeam1Score
-
 }
 
-team1Sub.addEventListener("click", subTeam1Score)
+team1Sub.addEventListener('click', subTeam1Score)
 
 const addTeam2Score = () => {
   let currentTeam2Score = team2Score.textContent
@@ -68,9 +66,12 @@ const addTeam2Score = () => {
       team2Score.textContent = 0
     }
   }
+  if (quarter.textContent >= 4) {
+    quarter.textContent = 0
+  }
 }
 
-team2Add.addEventListener("click", addTeam2Score)
+team2Add.addEventListener('click', addTeam2Score)
 
 const subTeam2Score = () => {
   let currentTeam2Score = team2Score.textContent
@@ -80,16 +81,20 @@ const subTeam2Score = () => {
   team2Score.textContent = currentTeam2Score
 }
 
-team2Sub.addEventListener("click", subTeam2Score)
+team2Sub.addEventListener('click', subTeam2Score)
 
 const newTeam1Name = () => {
   team1Name.innerHTML = team1Input.value
 }
 
-team1Input.addEventListener("click", newTeam1Name)
+team1Input.addEventListener('click', newTeam1Name)
 
 const newTeam2Name = () => {
   team2Name.innerHTML = team2Input.value
 }
 
-team2Input.addEventListener("click", newTeam2Name)
+team2Input.addEventListener('click', newTeam2Name)
+
+if (quarter.textContent >= 4) {
+  quarter.textContent = 0
+}
