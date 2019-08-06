@@ -106,7 +106,7 @@ h1 {
   color: #fff1c1;
   border: 1px solid #216583;
   background-color: #216583;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .team-1-input,
@@ -116,12 +116,34 @@ h1 {
   color: #216583;
   border: 1px solid #fff1c1;
   background-color: #fff1c1;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 section {
   color: #f76262;
   font-size: 1rem;
   font-weight: 500;
+}
 
+.reset-button {
+  border-radius: 1rem;
+  background-color: #f76262;
+  border-color: #f76262;
+  color: #fff1c1;
+}
+
+.round-won-team-1,
+.round-won-team-2 {
+  border: 1px solid #fff1c1;
+  background-color: #fff1c1;
+  color: #216583;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hide {
+  display: none;
 }
